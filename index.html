@@ -1,0 +1,329 @@
+---
+layout: home
+---
+
+<header class="header">
+    <div class="container">
+        <div class="profile-content pull-left">
+            <h1 class="name">Pierre Laperdrix</h1>
+            <h2 class="desc">1st year PhD student</h2>
+            <ul class="social list-inline">
+                <li><a href="https://github.com/plaperdr"><i class="fa fa-github-alt"></i></a></li>
+                <li class="last-item"><a href="https://bitbucket.org/pierre_laperdrix"><i class="fa fa-bitbucket"></i></a></li>
+            </ul>
+        </div><!--//profile-->
+        <a class="btn btn-cta-primary pull-right" href="mailto:pierre.laperdrix@inria.fr" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+    </div><!--//container-->
+</header><!--//header-->
+
+
+<div class="container sections-wrapper">
+    <div class="row">
+        <div class="primary col-md-8 col-sm-12 col-xs-12">
+            <section class="about section">
+                <div class="section-inner">
+                    <h2 class="heading">About Me</h2>
+                    <div class="content">
+                        <p>I'm a first year PhD student that works on browser fingerprinting in the DiverSE team at INRIA Rennes.</p>
+                        <p>My main domains of interests are computer security and privacy with a touch of software engineering. Outside of computer science,
+                            I love to live thousands of adventures through video games, movies or comics.</p>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+
+            <section class="publication section" id="publication">
+                <div class="section-inner">
+                    <h2 class="heading">Publication</h2>
+                    <div class="content">
+                        <div class="item">
+                            <h3 class="title">Mitigating browser fingerprint tracking: multi-level reconfiguration and diversification</h3>
+                            <p><i>Pierre Laperdrix, Walter Rudametkin, Benoit Baudry</i></p>
+                            <p>to appear in the 10th International Symposium on Software Engineering for Adaptive and Self-Managing Systems (SEAMS 2015)</p>
+                            <a class="btn btn-primary" id="abstract1" data-toggle="collapse" data-target="#collapseAbs1" aria-expanded="false" aria-controls="collapseAbs1">
+                                <i id="abstractIcon" class="fa fa-plus-square"></i>Abstract
+                            </a>
+                            <a class="btn btn-primary" href="http://diversify-project.eu/papers/laperdrix15.pdf" target="_blank"><i class="fa fa-external-link"></i>PDF</a>
+
+                            <div class="collapse" id="collapseAbs1">
+                                <div class="well">
+                                <p align="justify"> The diversity of software components (e.g., browsers, plugins, fonts) is a wonderful opportunity for users to customize their platforms. Yet, massive customization creates a privacy issue: browsers are
+                                    slightly different from one another, allowing third parties to collect unique and stable fingerprints to track users. Although software diversity appears to be the source of this privacy issue, we claim
+                                    that this same diversity, combined with automatic reconfiguration, provides the essential ingredients to constantly change browsing platforms. Constant change acts as a moving target defense strategy against
+                                    fingerprint tracking by breaking one essential property: stability over time. We leverage virtualization and modular architectures to automatically assemble and reconfigure software components at multiple
+                                    levels. We operate on operating systems, browsers, fonts and plugins. This work is the first application of software reconfiguration to build a moving target defense against browser fingerprint tracking.
+                                    The main objective is to automatically modify the fingerprint a platform exhibits. We have developed a prototype called Blink to experiment the effectiveness of our approach at randomizing fingerprints.
+                                    We have assembled and reconfigured thousands of platforms, and we observe that all of them exhibit different fingerprints, and that commercial fingerprinting solutions are not able to detect that
+                                    the different platforms actually correspond to a single user.</p>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div><!--//item-->
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+
+
+            <section class="latest section">
+                <div class="section-inner">
+                    <h2 class="heading">Current projects</h2>
+                    <div class="content">
+
+                        <div class="item featured text-center">
+                            <h3 class="title"><a href="https://amiunique.org" target="_blank">AmIUnique.org - Learn how identifiable you are on the Internet</a></h3>
+                            <p class="summary">A website to inform users on the dangers of browser fingerprinting
+                                <br><span class="label label-theme">Open Source</span>
+                            </p>
+                            <div class="featured-image">
+                                <a href="https://amiunique.org/" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/amiunique1.png" alt="AmIUnique.org" />
+                                </a>
+                                <div class="ribbon">
+                                    <div class="text">New</div>
+                                </div>
+                            </div>
+
+                            <div class="desc text-left">
+                                <p>The goal of this website is to measure and study the diversity of web browsers and establish statistical profiles of browser fingerprints.</p>
+                                <p>By connecting to AmIUnique, you cannot only check your browser fingerprint and see how unique you are in the web ecosystem, you will also contribute
+                                    in building a database of genuine fingerprints that will help us build solutions to prevent fingerprint tracking.</p>
+                                <p>Source: <a class="btn btn-secondary git" href="https://github.com/DIVERSIFY-project/amiunique"><i style="vertical-align: middle" class="fa fa-github fa-2x"></i>View on GitHub</a></p>
+                            </div><!--//desc-->
+                            <a class="btn btn-primary"  href="https://amiunique.org" target="_blank"><i style="vertical-align: middle" class="fa fa-user-secret fa-2x"></i> View my browser fingerprint</a>
+                        </div><!--//item-->
+                        <hr class="divider" />
+                        <div class="item row">
+                            <a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">
+                                <object class="img-responsive project-image" data="assets/images/projects/blink-dock1.svg" type="image/svg+xml">
+                                    <img class="img-responsive project-image" src="assets/images/projects/blink-dock1-fall.png" alt="Blink Docker" />
+                                </object>
+                            </a>
+                            <div class="desc col-md-8 col-sm-8 col-xs-12" style="vertical-align: middle">
+                                <h3 class="title">Blink on Docker <br><span class="label label-theme" style="margin-left: 0">Open Source</span></h3>
+                                <p>A new and improved version of Blink running completely inside Docker containers!</p>
+                                <p>New features:</p>
+                                <ul>
+                                    <li>Improved performances: Thanks to the technology behind containers, Blink generates and launches complete environments in less than 10s!
+                                    The footprint has also been drastically reduced compared to the size of complete virtual machines.</li>
+                                    <li>Easy installation: One script to build everything, one script to run everything! It cannot get simpler than that.</li>
+                                    <li>Integrated maintenance system: Updates to both Blink's core and the diversity reservoir are now automatically delivered!</li>
+                                    <li>More to be announced soon...</li>
+                                </ul>
+                                <p>Source: <a class="btn btn-secondary git"><i style="vertical-align: middle" class="fa fa-github fa-2x"></i>Soon on GitHub</a></p>
+                                <p>Blink on Docker is not ready for primetime yet but an early build without the complete set of features will be released soon. Stay tuned on this
+                                    page or in my blog for any news regarding availability! </p>
+                            </div><!--//desc-->
+                        </div><!--//item-->
+
+
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+
+            <section class="projects section">
+                <div class="section-inner">
+                    <h2 class="heading">Past Projects</h2>
+                    <div class="content">
+                        <div class="item row">
+                            <a class="col-md-4 col-sm-4 col-xs-12" target="_blank">
+                                <object class="img-responsive project-image" data="assets/images/projects/blink-1.svg" type="image/svg+xml">
+                                    <img class="img-responsive project-image" src="assets/images/projects/blink-1-fall.png" alt="Blink" />
+                                </object>
+                            </a>
+
+                            <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                <h3 class="title"><a href="https://github.com/DIVERSIFY-project/blink">Blink</a>
+                                <br>
+                                <span class="label label-theme">Open Source</span></h3>
+
+                                <div role="tabpanel">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#descBlink" aria-controls="desc" role="tab" data-toggle="tab">Summary</a></li>
+                                        <li role="presentation"><a href="#videoOwf" aria-controls="video" role="tab" data-toggle="tab">Video OWF'14 (in French)</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active well" style="background-color: #FFFFFF" id="descBlink">
+                                            <p class="summary">The true and original Blink project, the one that started it all!</p>
+                                            <p>Running on virtual machines with VirtualBox, Blink generates random browsing environments on the fly to fuzz the real device fingerprint
+                                                by exposing random fingerprints for each browsing session.</p>
+                                            <p>Want to know more? Read <a href="#publication">our first publication</a> where you will get all the details surrounding this solution.</p>
+                                            <p>Source: <a class="btn btn-secondary git" href="https://github.com/DIVERSIFY-project/blink" target="_blank"><i style="vertical-align: middle" class="fa fa-github fa-2x"></i>View on GitHub</a></p>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane well" style="background-color: #FFFFFF" id="videoOwf">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uVECjeSUzy0" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--//item-->
+
+                        <hr class="divider">
+
+                        <div class="item row">
+                            <a class="col-md-4 col-sm-4 col-xs-12" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/msvip-1.png" alt="Msvip" />
+                            </a>
+                            <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                <h3 class="title">Multi-Screen Virtual Interactive Presentation (MSVIP) Project</h3>
+
+                                <div role="tabpanel">
+
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#desc" aria-controls="desc" role="tab" data-toggle="tab">Summary</a></li>
+                                        <li role="presentation"><a href="#photosMsvip" aria-controls="photo" role="tab" data-toggle="tab">Photos</a></li>
+                                        <li role="presentation"><a href="#videoMsvip" aria-controls="video" role="tab" data-toggle="tab">Video (in French)</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active well" style="background-color: #FFFFFF" id="desc">
+                                            <p class="summary">In partnership with <a href="http://www.excense.fr/">Excense</a>, we created a virtual showcase to demonstrate the ability of connected devices to engage audiences in lively and interactive presentation.
+                                            Built around the Microsoft PixelSense technology, the master of ceremony operates on a touch-enabled table and can control any number of tablets or computers remotely connected
+                                            to it to provide added value to his or her presentation.</p>
+                                            <p>The example built for the device was an interactive presentation of my engineering school, the INSA de Rennes. The app is now used during <i>Open days</i> to give an overview of the school to visitors.</p>
+                                        </div>
+
+                                        <div role="tabpanel" class="tab-pane well" style="background-color: #FFFFFF" id="videoMsvip">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gkkUyiwJHPs" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <div role="tabpanel" class="tab-pane well slid" style="background-color: #FFFFFF" id="photosMsvip">
+                                            <div class="slider">
+                                                <div>
+                                                    <img src="assets/images/projects/msvip-2.png" />
+                                                    <p class="subcaption">Overview of the MSVIP concept</p>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/projects/msvip-3.jpg" />
+                                                    <p class="subcaption">MSVIP in action 1</p>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/projects/msvip-4.jpg" />
+                                                    <p class="subcaption">MSVIP in action 2</p>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/projects/msvip-5.jpg" />
+                                                    <p class="subcaption">MSVIP in action 3</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div><!--//item-->
+
+                        <hr class="divider">
+
+                        <div class="item row">
+                            <a class="col-md-4 col-sm-4 col-xs-12" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/daedalus-1.jpg" alt="Msvip" />
+                            </a>
+
+                            <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                <h3 class="title">Daedalus Project</h3>
+
+                                <div role="tabpanel">
+
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#descDaed" aria-controls="descDard" role="tab" data-toggle="tab">Summary</a></li>
+                                        <li role="presentation"><a id="btl" href="#photosDaed" aria-controls="photoDaed" role="tab" data-toggle="tab">Photos</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active well" style="background-color: #FFFFFF" id="descDaed">
+                                            <p class="summary">We built a maze generator for a Virtual reality game where one player is put against another to get out of a maze. The biggest challenge for this
+                                                project was to build an easy-to-use software that proposed different generation strategies. A real effort was put into having a nice and comprehensive graphical interface that
+                                                would give any creator the freedom to create the maze of his or her dream.</p>
+                                        </div>
+
+                                        <div role="tabpanel" class="tab-pane well slid" style="background-color: #FFFFFF" id="photosDaed">
+
+                                            <div class="slider">
+                                                <div>
+                                                    <img src="assets/images/projects/daedalus-2.jpg" />
+                                                    <p class="subcaption">Overview of the VR game</p>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/projects/daedalus-3.png" />
+                                                    <p class="subcaption">Overview of the interface of the generator</p>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/projects/daedalus-4.png" />
+                                                    <p class="subcaption">From the generator to the VR game</p>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/images/projects/daedalus-5.png" />
+                                                    <p class="subcaption">Overview of the generation process</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--//item-->
+
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+
+
+        </div><!--//primary-->
+
+        <div class="secondary col-md-4 col-sm-12 col-xs-12">
+            <aside class="info aside section">
+                <div class="section-inner">
+                    <h2 class="heading sr-only">Basic Information</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Rennes, FR</li>
+                            <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:pierre.laperdrix@irisa.fr">pierre.laperdrix@irisa.fr</a></li>
+                            <li><i class="fa fa-key"></i><span class="sr-only"></span><a href="{{ "/assets/pgp/laperdrix_key.txt" | prepend: site.baseurl }}">PGP Key</a></li>
+                        </ul>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//aside-->
+
+            <aside class="blog aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Latest Blog Posts</h2>
+                    <div id="rss-feeds" class="content">
+
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+
+            <aside class="list conferences aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Upcoming conferences/events</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-calendar"></i> <a href="http://www.disim.univaq.it/seams2015/">SEAMS 2015</a> (Firenze) - Presentation of my 1st publication</li>
+                        </ul>
+                    </div><!--//content-->
+                    <br>
+                    <h2 class="heading">Past conferences/events</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-calendar"></i> <a href="https://www.forum-fic.com/2015/">FIC 2015</a> (Lille) - Presentation of Blink</li>
+                            <li><i class="fa fa-calendar"></i> <a href="https://fossa.inria.fr/">fOSSa 2014</a> (Rennes) - Presentation of Blink</li>
+                            <li><i class="fa fa-calendar"></i> <a href="http://www.openworldforum.paris/">OWF 2014</a> (Paris) - Presentation of Blink</li>
+                        </ul>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+
+        </div><!--//secondary-->
+    </div><!--//row-->
+</div><!--//masonry-->
+

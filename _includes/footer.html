@@ -1,0 +1,44 @@
+<!-- ******FOOTER****** -->
+<footer class="footer">
+    <div class="container text-center">
+        <small class="copyright">
+            Original templates designed by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> and
+            <a href="https://github.com/rohanchandra/type-theme" target="_blank">Rohan Chandra</a>
+        </small>
+
+    </div><!--//container-->
+</footer><!--//footer-->
+
+<!-- Javascript -->
+<script type="text/javascript" src="{{ "/assets/plugins/jquery-1.11.2.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/plugins/jquery-migrate-1.2.1.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/plugins/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/plugins/jquery-rss/dist/jquery.rss.min.js" | prepend: site.baseurl }}"></script>
+<!-- custom js -->
+<script type="text/javascript" src="{{ "/assets/js/main.js"| prepend: site.baseurl }}"></script>
+
+<!--Slick-->
+<link rel="stylesheet" href="{{ "/assets/plugins/slick/slick.css" | prepend: site.baseurl }}" type="text/css">
+<link rel="stylesheet" href="{{ "/assets/plugins/slick/slick-theme.css" | prepend: site.baseurl }}" type="text/css">
+<script src="{{ "/assets/plugins/slick/slick.min.js" | prepend: site.baseurl }}"></script>
+
+
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#abstract1').click(function(){
+            $('#abstractIcon').toggleClass("fa-plus-square fa-minus-square");
+        });
+    });
+</script>
