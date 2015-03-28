@@ -25,8 +25,12 @@ h6 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   /*color: #778492;*/
-  font-size: 3em;
 }
+
+h1 {
+    font-size: 3em;
+}
+
 a {
   color: #2E6DA4;
   -webkit-transition: all 0.4s ease-in-out;
@@ -338,4 +342,21 @@ iframe {
   .container {
     width: 1360px;
   }
+}
+
+/* Fix git focus color */
+a.git:focus,
+.git:focus {
+    color: black;
+}
+
+/* Fix code highlight wrapping */
+.highlight pre code * {
+    white-space: nowrap;
+}
+.highlight pre {
+    overflow-x: auto;
+}
+.highlight pre code {
+    white-space: pre;
 }
