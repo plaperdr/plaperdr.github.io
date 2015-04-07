@@ -5,7 +5,7 @@ title: First version of Blink on Docker released
 
 I'm happy to announce that the first version of Blink on Docker is now available on [GitHub](https://github.com/plaperdr/blink-docker)!
 Automated builds of the main containers are also available through [Docker Hub](https://registry.hub.docker.com/u/plaperdr/). 
-And thanks to the [new webhook subscription feature)(https://blog.docker.com/2015/04/announcing-webhook-respository-subscriptions/), 
+And thanks to the [new webhook subscription feature](https://blog.docker.com/2015/04/announcing-webhook-respository-subscriptions/), 
 the Docker images are now automatically rebuilt when the images on which they are based are updated.
 
 <div style="text-align:center" markdown="1">
