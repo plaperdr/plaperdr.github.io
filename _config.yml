@@ -8,13 +8,17 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://plaperdr.github.io" # the base hostname & protocol for your site
 
+gems: [jekyll-paginate]
+
 # PAGINATION
 paginate: 5
 paginate_path: "blog/page:num"
 
 # BUILD SETTINGS
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 markdown: kramdown
-highlighter: pygments
 sass:
   sass_dir: _sass
   style: :compressed
