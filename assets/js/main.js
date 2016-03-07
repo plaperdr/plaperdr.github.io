@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
     $("#rss-feeds").rss(
     
         //Change this to your own rss feeds
-        "http://plaperdr.github.io/feed.xml",
+        "https://plaperdr.github.io/feed.xml",
         
         {
         // how many entries do you want?
