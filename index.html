@@ -6,7 +6,7 @@ layout: home
     <div class="container">
         <div class="profile-content pull-left">
             <h1 class="name">Pierre Laperdrix</h1>
-            <h2 class="desc">1st year PhD student</h2>
+            <h2 class="desc">2nd year PhD student</h2>
             <ul class="social list-inline">
                 <li><a href="https://github.com/plaperdr"><i class="fa fa-github-alt"></i></a></li>
                 <li class="last-item"><a href="https://bitbucket.org/pierre_laperdrix"><i class="fa fa-bitbucket"></i></a></li>
@@ -24,7 +24,7 @@ layout: home
                 <div class="section-inner">
                     <h2 class="heading">About Me</h2>
                     <div class="content">
-                        <p>I'm a first year PhD student who works on browser fingerprinting in the DiverSE team at INRIA Rennes.</p>
+                        <p>I'm a second year PhD student who works on browser fingerprinting in the DiverSE team at INRIA Rennes.</p>
                         <p>My main domains of interests are computer security and privacy with a touch of software engineering. Outside of computer science,
                             I love to live thousands of adventures through video games, movies or comics.</p>
                     </div><!--//content-->
@@ -33,16 +33,62 @@ layout: home
 
             <section class="publication section" id="publication">
                 <div class="section-inner">
-                    <h2 class="heading">Publication</h2>
+                    <h2 class="heading">Scientific publications</h2>
                     <div class="content">
+						<div class="item">
+                            <h3 class="title">Beauty and the Beast: Diverting modern web browsers to build unique browser fingerprints</h3>
+                            <p><i>Pierre Laperdrix, Walter Rudametkin, Benoit Baudry</i></p>
+                            <p>to appear in the 37th IEEE Symposium on Security and Privacy (S&P 2016)</p>
+                            <a class="btn btn-primary" id="abstract2" data-toggle="collapse" data-target="#collapseAbs2" aria-expanded="false" aria-controls="collapseAbs2">
+                                <i id="abstractIcon2" class="fa fa-plus-square"></i>Abstract
+                            </a>
+                            <a class="btn btn-primary" target="_blank"><i class="fa fa-external-link"></i>PDF (available soon)</a>
+
+                            <div class="collapse" id="collapseAbs2">
+                                <div class="well">
+		                            <p align="justify"> 
+										Worldwide, the number of people and the time spent
+										browsing the web keeps increasing. Accordingly, the technologies
+										to enrich the user experience are evolving at an amazing
+										pace. Many of these evolutions provide for a more interactive
+										web (e.g., boom of JavaScript libraries, weekly innovations
+										in HTML5), a more available web (e.g., explosion of mobile
+										devices), a more secure web (e.g., Flash is disappearing, NPAPI
+										plugins are being deprecated), and a more private web (e.g.,
+										increased legislation against cookies, huge success of extensions
+										such as Ghostery and AdBlock).
+										Nevertheless, modern browser technologies, which provide
+										the beauty and power of the web, also provide a darker side,
+										a rich ecosystem of exploitable data that can be used to build
+										unique browser fingerprints.
+										Our work explores the validity of browser fingerprinting
+										in today’s environment. Over the past year, we have collected
+										118,934 fingerprints composed of 17 attributes gathered thanks
+										to the most recent web technologies. We show that innovations
+										in HTML5 provide access to highly discriminating attributes,
+										notably with the use of the Canvas API which relies on
+										multiple layers of the user’s system. In addition, we show
+										that browser fingerprinting is as effective on mobile devices
+										as it is on desktops and laptops, albeit for radically different
+										reasons due to their more constrained hardware and software
+										environments. We also evaluate how browser fingerprinting
+										could stop being a threat to user privacy if some technological
+										evolutions continue (e.g., disappearance of plugins) or are
+										embraced by browser vendors (e.g., standard HTTP headers).
+									</p>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div><!--//item-->
                         <div class="item">
                             <h3 class="title">Mitigating browser fingerprint tracking: multi-level reconfiguration and diversification</h3>
                             <p><i>Pierre Laperdrix, Walter Rudametkin, Benoit Baudry</i></p>
-                            <p>to appear in the 10th International Symposium on Software Engineering for Adaptive and Self-Managing Systems (SEAMS 2015)</p>
+                            <p>Proceedings of the 10th International Symposium on Software Engineering for Adaptive and Self-Managing Systems (SEAMS 2015)</p>
                             <a class="btn btn-primary" id="abstract1" data-toggle="collapse" data-target="#collapseAbs1" aria-expanded="false" aria-controls="collapseAbs1">
-                                <i id="abstractIcon" class="fa fa-plus-square"></i>Abstract
+                                <i id="abstractIcon1" class="fa fa-plus-square"></i>Abstract
                             </a>
                             <a class="btn btn-primary" href="http://diversify-project.eu/papers/laperdrix15.pdf" target="_blank"><i class="fa fa-external-link"></i>PDF</a>
+							<a class="btn btn-primary" href="assets/documents/seams_blink_slides.pdf" target="_blank"><i class="fa fa-external-link"></i>Slides</a>
 
                             <div class="collapse" id="collapseAbs1">
                                 <div class="well">
@@ -54,6 +100,36 @@ layout: home
                                     The main objective is to automatically modify the fingerprint a platform exhibits. We have developed a prototype called Blink to experiment the effectiveness of our approach at randomizing fingerprints.
                                     We have assembled and reconfigured thousands of platforms, and we observe that all of them exhibit different fingerprints, and that commercial fingerprinting solutions are not able to detect that
                                     the different platforms actually correspond to a single user.</p>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div><!--//item-->
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </section><!--//section-->
+
+			<section class="magazine section" id="magazine">
+                <div class="section-inner">
+                    <h2 class="heading">Magazine publication</h2>
+                    <div class="content">
+                        <div class="item">
+                            <h3 class="title">Le fingerprinting : une nouvelle technique de traçage </h3>
+                            <p><i>Pierre Laperdrix, Benoit Baudry</i></p>
+                            <p>MISC n°81, french security-focused magazine. September/October 2015, pp.52-57</p>
+                            <a class="btn btn-primary" id="abstractMisc" data-toggle="collapse" data-target="#collapseAbsMisc" aria-expanded="false" aria-controls="collapseAbsMisc">
+                                <i id="abstractIconMisc" class="fa fa-plus-square"></i>Abstract
+                            </a>
+                            <a class="btn btn-primary" target="_blank"><i class="fa fa-external-link"></i>Full article (available soon)</a>
+
+                            <div class="collapse" id="collapseAbsMisc">
+                                <div class="well">
+                                <p align="justify">Le « browser fingerprinting » désigne l’activité de collecte par un navigateur
+								d’un certain nombre d’informations sur l’appareil d’un internaute pour
+								bâtir une empreinte (fingerprint). De nombreuses études ont montré que
+								cette empreinte est unique dans la très grande majorité des cas et évolue très
+								lentement. Il est ainsi possible de l’utiliser pour tracer les internautes, sans laisser
+								aucune trace sur l’appareil.
+								</p>
                                 </div>
                             </div>
                             <p></p>
@@ -89,6 +165,15 @@ layout: home
                                 <p>Source: <a class="btn btn-secondary git" href="https://github.com/DIVERSIFY-project/amiunique"><i style="vertical-align: middle" class="fa fa-github fa-2x"></i>View on GitHub</a></p>
                             </div><!--//desc-->
                             <a class="btn btn-primary"  href="https://amiunique.org" target="_blank"><i style="vertical-align: middle" class="fa fa-user-secret fa-2x"></i> View your browser fingerprint</a>
+							<br><br><br>
+
+							<div class="desc text-left">
+                                <p>In addition to the AmIUnique website, I developped extensions for Chrome and Firefox to understand the evolution of fingerprints and study it in depth.</p>
+                                <p>With them, the user can see the evolution of his fingerprint on his own timeline and be notified as soon as a change is detected.</p>
+                            </div><!--//desc-->
+							<a class="btn btn-primary"  href="https://addons.mozilla.org/firefox/addon/amiunique/" target="_blank"><i style="vertical-align: middle" class="fa fa-firefox fa-2x"></i> AmIUnique extension for Firefox</a>
+							 &nbsp; &nbsp;
+							<a class="btn btn-primary"  href="https://chrome.google.com/webstore/detail/amiunique/pigjfndpomdldkmoaiiigpbncemhjeca" target="_blank"><i style="vertical-align: middle" class="fa fa-chrome fa-2x"></i> AmIUnique extension for Chrome</a>
                         </div><!--//item-->
                         <hr class="divider" />
 
@@ -314,13 +399,16 @@ layout: home
                     <h2 class="heading">Upcoming conferences/events</h2>
                     <div class="content">
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-calendar"></i> <a href="http://www.disim.univaq.it/seams2015/">SEAMS 2015</a> (Firenze) - Presentation of my 1st publication</li>
+							<li><i class="fa fa-calendar"></i> <a href="http://www.ieee-security.org/TC/SP2016/">S&P 2016</a> (San Jose) - Presentation of my 2nd publication</li>
+                            <li><i class="fa fa-calendar"></i> <a href="http://biblio.insa-rennes.fr/crypto">Cryptoparty II</a> (Rennes) - Workshop on browser fingerprinting</li>
                         </ul>
                     </div><!--//content-->
                     <br>
                     <h2 class="heading">Past conferences/events</h2>
                     <div class="content">
                         <ul class="list-unstyled">
+							<li><i class="fa fa-calendar"></i> <a href="https://po.irisa.fr/en/">Irisa Open House Day </a> (Rennes) - Presentation of AmIUnique and browser fingerprinting</li>
+							<li><i class="fa fa-calendar"></i> <a href="http://www.disim.univaq.it/seams2015/">SEAMS 2015</a> (Firenze) - Presentation of my 1st publication</li>
 							<li><i class="fa fa-calendar"></i> <a href="http://biblio.insa-rennes.fr/crypto">Cryptoparty</a> (Rennes) - Workshop on browser fingerprinting</li>
                             <li><i class="fa fa-calendar"></i> <a href="https://www.forum-fic.com/2015/">FIC 2015</a> (Lille) - Presentation of Blink</li>
                             <li><i class="fa fa-calendar"></i> <a href="https://fossa.inria.fr/">fOSSa 2014</a> (Rennes) - Presentation of Blink</li>
