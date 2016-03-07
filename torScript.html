@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script for Tor</title>
+
+</head>
+<body>
+    <h1>Some fingerprinting tests for the Tor browser</h1>
+    <div id="scroll">
+        Scroll for results
+    </div>
+    <div id="res" style="visibility: hidden">
+        Test 1 - Size of current window - <a href="https://trac.torproject.org/projects/tor/ticket/14098" target="_blank">Ticket 14098</a>
+        <div id="test1"></div>
+        <br>
+        Test 2 - Emoji detection - <a href="https://trac.torproject.org/projects/tor/ticket/18172" target="_blank">Ticket 18172</a>
+        <br>
+        <canvas id="can1" width="30" height="30"></canvas>
+        <br>
+        <div id="test2"></div>
+        <br>
+        Test 3 - Trackpad/Mouse detection (to be investigated) - <a href="http://jcarlosnorte.com/security/2016/03/06/advanced-tor-browser-fingerprinting.html" target="_blank">Source</a>
+        <div id="test3"></div>
+        <br>
+        Test 4 - Size of glyphs with the use of the fallback font with a canvas element (does not need the permission of the user)
+        <div id="test4"></div>
+        <br>
+        Test 5 - OS leak through the discovery of maximum font size
+        <div id="test5"></div>
+        <br>
+        Test 6 - Study of the Date API on different OS - <a href="https://trac.torproject.org/projects/tor/ticket/15473" target="_blank">Ticket 15473</a>
+        <div id="test6"></div>
+        <br>
+        Test 7 - Study of the Math API on different OS - <a href="https://trac.torproject.org/projects/tor/ticket/13018" target="_blank">Ticket 13018</a>
+        <div id="test7"></div>
+        <br>
+        <script type="text/javascript" src="assets/tor/tor.js"></script>
+    </div>
+</body>
+</html>
