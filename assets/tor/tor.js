@@ -9,12 +9,12 @@ var commonHeights = [600,720,768,800,900,1024,1050,1080,1200,1440,1600,2160];
 
 var div = document.getElementById("test1");
 var res1 = "Size:"+width+"x"+height+"<br>";
-if(width==1000 && aWidth==1000){
-    res1 += "Your browser is the Tor browser at the recommended size." ;
+if((aWidth==1000 && aHeight==1000) || (width%200==0 && height%100==0 && width==2*height)){
+    res1 += "Your browser is the Tor browser at one of the recommended size." ;
 } else if(commonWidths.indexOf(width)> -1 && commonHeights.indexOf(height) > -1){
     res1 += "Your browser is not the Tor browser." ;
 } else {
-    res1 += "Your browser is probably the Tor browser but it is not at the default size of 1000x1000";
+    res1 += "Your browser is probably the Tor browser but it is not at at one of the recommended size (1000x1000 or a multiple of 200x100).";
 }
 div.innerHTML =  res1;
 
