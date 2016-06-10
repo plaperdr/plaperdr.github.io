@@ -144,6 +144,45 @@ layout: home
                     <h2 class="heading">Current projects</h2>
                     <div class="content">
 
+                        <div class="item row featured">
+                            <div class="text-center">
+                                <h3 class="title">Fingerprint Central - A project for the Tor organization</h3>
+                                <p class="summary">A website to help developers design smart defences against browser fingerprinting
+                                    <br>Developed as part of <a href="https://summerofcode.withgoogle.com/projects/#5574889654190080">the Google Summer of Code 2016</a>
+                                    <br><span class="label label-theme">Open Source</span> <br>
+                                </p>
+                            </div>
+                            <div class="featured-image">
+                                <img class="img-responsive project-image" src="assets/images/projects/fpcentral.png" alt="FP Central" />
+                                <div class="ribbon">
+                                    <div class="text">New</div>
+                                </div>
+                            </div>
+
+                            <div class="desc text-left">
+                                <p>The capabilities of browser fingerprinting as a tool to track users online has been demonstrated by Panopticlick and other research papers since 2010.
+                                    The Tor community is fully aware of the problem and the Tor browser has been modified to follow the "one fingerprint for all" approach.
+                                    However, due to the constant evolution of the web and its underlying technologies, it has become a true challenge to always stay ahead
+                                    of the latest fingerprinting techniques.
+                                </p><p>
+                                    For this Google Summer of Code project, I'm developing the Fingerprint Central website that runs a fingerprinting test suite and collect data
+                                    from Tor browsers to help developers design and test new defences against browser fingerprinting. The website is similar to AmIUnique.org or
+                                    Panopticlick for users where they will get a complete summary with statistics after the test suite has been executed. It can be used to test new
+                                    fingerprinting protection as well as making sure that fingerprinting-related bugs were correctly fixed with specific regression tests.
+                                    The expected long-term impact of this project is to reduce the differences between Tor users and reinforce their privacy and anonymity online.
+                                </p>
+                                <p>Links: <a class="btn btn-secondary git" href="https://github.com/plaperdr/fp-central"><i style="vertical-align: middle" class="fa fa-github fa-2x"></i>View on GitHub</a>
+                                    <a class="btn btn-secondary git" href="{{ site.url }}/assets/documents/proposal-gsoc16.pdf" target="_blank"><i style="vertical-align: middle" class="fa fa-external-link fa-2x"></i>View the GSoC proposal</a>
+                                    <a class="btn btn-secondary git" href="https://trac.torproject.org/projects/tor/wiki/doc/gsoc" target="_blank"><i style="vertical-align: middle" class="fa fa-external-link fa-2x"></i>View status reports</a>
+                                </p>
+                                <div class="text-center">
+                                <a class="btn btn-primary" target="_blank"><i style="vertical-align: middle" class="fa fa-clock-o  fa-2x"></i> Launching soon...</a>
+                                </div>
+                            </div><!--//desc-->
+                        </div><!--//item-->
+
+                        <hr class="divider" />
+
                         <div class="item featured text-center">
                             <h3 class="title"><a href="https://amiunique.org" target="_blank">AmIUnique.org - Learn how identifiable you are on the Internet</a></h3>
                             <p class="summary">A website to inform users on the dangers of browser fingerprinting
@@ -153,9 +192,6 @@ layout: home
                                 <a href="https://amiunique.org/" target="_blank">
                                     <img class="img-responsive project-image" src="assets/images/projects/amiunique1.png" alt="AmIUnique.org" />
                                 </a>
-                                <div class="ribbon">
-                                    <div class="text">New</div>
-                                </div>
                             </div>
 
                             <div class="desc text-left">
@@ -175,6 +211,7 @@ layout: home
 							 &nbsp; &nbsp;
 							<a class="btn btn-primary"  href="https://chrome.google.com/webstore/detail/amiunique/pigjfndpomdldkmoaiiigpbncemhjeca" target="_blank"><i style="vertical-align: middle" class="fa fa-chrome fa-2x"></i> AmIUnique extension for Chrome</a>
                         </div><!--//item-->
+
                         <hr class="divider" />
 
                         <div class="item row featured">
@@ -184,7 +221,7 @@ layout: home
                                 <br><span class="label label-theme">Open Source</span>
                             </p>
                             </div>
-                            <a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">
+                            <a class="col-md-4 col-sm-4 col-xs-12" target="_blank">
                                 <object class="img-responsive project-image" data="assets/images/projects/blink-dock1.svg" type="image/svg+xml">
                                     <img class="img-responsive project-image" src="assets/images/projects/blink-dock1-fall.png" alt="Blink Docker" />
                                 </object>
@@ -400,13 +437,14 @@ layout: home
                     <h2 class="heading">Upcoming conferences/events</h2>
                     <div class="content">
                         <ul class="list-unstyled">
-							<li><i class="fa fa-calendar"></i> <a href="http://www.ieee-security.org/TC/SP2016/">S&P 2016</a> (San Jose) - Presentation of my 2nd publication on AmIUnique and presentation of a poster on Blink</li>
+							<li><i class="fa fa-calendar"></i> <a href="https://summerofcode.withgoogle.com/projects/#5574889654190080">GSOC 2016</a> - Development of Fingerprint Central for the Tor organization</li>
                         </ul>
                     </div><!--//content-->
                     <br>
                     <h2 class="heading">Past conferences/events</h2>
                     <div class="content">
                         <ul class="list-unstyled">
+							<li><i class="fa fa-calendar"></i> <a href="http://www.ieee-security.org/TC/SP2016/">S&P 2016</a> (San Jose) - Presentation of my 2nd publication on AmIUnique and presentation of a poster on Blink</li>
 							<li><i class="fa fa-calendar"></i> <a href="http://biblio.insa-rennes.fr/crypto">Cryptoparty II</a> (Rennes) - Workshop on browser fingerprinting</li>
 							<li><i class="fa fa-calendar"></i> <a href="https://po.irisa.fr/en/">Irisa Open House Day </a> (Rennes) - Presentation of AmIUnique and browser fingerprinting</li>
 							<li><i class="fa fa-calendar"></i> <a href="http://www.disim.univaq.it/seams2015/">SEAMS 2015</a> (Firenze) - Presentation of my 1st publication</li>

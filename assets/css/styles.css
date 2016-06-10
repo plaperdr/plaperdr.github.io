@@ -549,3 +549,10 @@ a.git:focus,
 .git:focus {
     color: black;
 }
+
+.latest .featured {
+  margin-bottom: 0;
+}
+.latest .item {
+  margin-bottom: 0;
+}
