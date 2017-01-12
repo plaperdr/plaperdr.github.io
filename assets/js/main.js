@@ -27,17 +27,17 @@ jQuery(document).ready(function($) {
     
         //Change this to your own rss feeds
         "https://plaperdr.github.io/feed.xml",
-        
+
         {
         // how many entries do you want?
         // default: 4
         // valid values: any integer
         limit: 3,
 
-		// will request the API via https
-		// default: false
-	    // valid values: false, true
-    	ssl: true,
+        // will request the API via https
+        // default: false
+        // valid values: false, true
+        ssl: true,
         
         // the effect, which is used to let the entries appear
         // default: 'show'
