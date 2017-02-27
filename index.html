@@ -148,6 +148,40 @@ layout: home
 
                         <div class="item row featured">
                             <div class="text-center">
+                                <h3 class="title">FPRandom - Breaking the stability of advanced fingerprinting techniques</h3>
+                                <p class="summary">A modified browser that introduces random noise inside core browser objects
+                                    <br><span class="label label-theme">Open Source</span> <br>
+                                </p>
+                            </div>
+                            <div class="featured-image">
+                                <img class="img-responsive project-image" src="assets/images/projects/fprandom.png" alt="FPRandom" />
+                                <div class="ribbon">
+                                    <div class="text">New</div>
+                                </div>
+                            </div>
+                            <div class="desc text-left">
+                                <p>FPRandom is a modified version of Firefox 54, the latest Nightly version from Mozilla.
+                                    FPRandom's primary goal is to break the stability and determinism of very specific
+                                    fingerprinting techniques (Canvas, Audio, JavaScript engine) while preserving the best user experience possible. By
+                                    introducing enough noise during the fingerprinting process, trackers are fooled and
+                                    cannot bound a freshly collected fingerprint with an old one, thus rendering the tracking
+                                    across multiple sessions impossible.
+                                </p>
+                                <p>
+                                    Source: <a class="btn btn-secondary git" target="_blank" href="https://github.com/plaperdr/fprandom"><i style="vertical-align: middle" class="fa fa-github fa-2x"></i>View on GitHub</a>
+                                </p>
+                                <div class="text-center">
+                                    <a class="btn btn-primary" href="https://github.com/plaperdr/fprandom/releases/download/v1.2/fprandom-54.0a1.en-US.linux-x86_64.tar.bz2" target="_blank">
+                                        <i style="vertical-align: middle" class="fa fa-flask  fa-2x"></i> Test the Linux prototype
+                                    </a>
+                                </div>
+                            </div><!--//desc-->
+                        </div><!--//item-->
+
+                        <hr class="divider" />
+
+                        <div class="item row featured">
+                            <div class="text-center">
                                 <h3 class="title">Fingerprint Central - A project for the Tor organization</h3>
                                 <p class="summary">A website to help developers design smart defences against browser fingerprinting
                                     <br>Developed as part of <a target="_blank" href="https://summerofcode.withgoogle.com/archive/2016/projects/5915605559410688/">the Google Summer of Code 2016</a>
@@ -277,7 +311,7 @@ layout: home
                                             <p class="summary">The true and original Blink project, the one that started it all!</p>
                                             <p>Running on virtual machines with VirtualBox, Blink generates random browsing environments on the fly to fuzz the real device fingerprint
                                                 by exposing random fingerprints for each browsing session.</p>
-                                            <p>Want to know more? Read <a href="#publication">our first publication</a> where you will get all the details surrounding this solution.</p>
+                                            <p>Want to know more? Read <a href="https://hal.inria.fr/hal-01121108/document" target="_blank">our first publication</a> where you will get all the details surrounding this solution.</p>
                                             <p>Source: <a class="btn btn-secondary git" href="https://github.com/DIVERSIFY-project/blink" target="_blank"><i style="vertical-align: middle" class="fa fa-github fa-2x"></i>View on GitHub</a></p>
                                         </div>
                                         <div role="tabpanel" class="tab-pane well" style="background-color: #FFFFFF" id="videoOwf">
