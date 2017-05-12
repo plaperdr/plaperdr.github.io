@@ -35,6 +35,32 @@ layout: home
                 <div class="section-inner">
                     <h2 class="heading">Scientific publications</h2>
                     <div class="content">
+                        <div class="item">
+                            <h3 class="title">FPRandom: Randomizing core browser objects to break advanced device fingerprinting techniques</h3>
+                            <p><i>Pierre Laperdrix, Benoit Baudry, Vikas Mishra</i></p>
+                            <p>Proceedings of the 9th International Symposium on Engineering Secure Software and Systems (ESSoS 2017)</p>
+                            <a class="btn btn-primary" id="abstract3" data-toggle="collapse" data-target="#collapseAbs3" aria-expanded="false" aria-controls="collapseAbs3">
+                                <i id="abstractIcon3" class="fa fa-plus-square"></i>Abstract
+                            </a>
+                            <a class="btn btn-primary"><i class="fa fa-external-link"></i>PDF (coming soon)</a>
+
+                            <div class="collapse" id="collapseAbs3">
+                                <div class="well">
+                                    <p align="justify">
+                                        The rich programming interfaces (APIs) provided by web browsers can be diverted to collect a browser fingerprint.
+                                        A small number of queries on these interfaces are sufficient to build a fingerprint that is statistically unique and very stable over time.
+                                        Consequently, the fingerprint can be used to track users.
+                                        Our work aims at mitigating the risk of browser fingerprinting for users privacy by 'breaking' the stability of a fingerprint over time.
+                                        We add randomness in the computation of selected browser functions, in order to have them deliver slightly different answers for each browsing session.
+                                        Randomization is possible thanks to the following properties of browsers implementations: (i) some functions have a nondeterministic specification, but a deterministic implementation; (ii) multimedia functions can be slightly altered without deteriorating user's perception.
+                                        We present FPRandom, a modified version of Firefox that adds randomness to mitigate the most recent fingerprinting algorithms, namely canvas fingerprinting, AudioContext fingerprinting and the unmasking of browsers through the order of JavaScript properties.
+                                        We evaluate the effectiveness of FPRandom by testing it against known fingerprinting tests.
+                                        We also conduct a user study and evaluate the performance overhead of randomization to determine the impact on the user experience.
+                                    </p>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div><!--//item-->
 						<div class="item">
                             <h3 class="title">Beauty and the Beast: Diverting modern web browsers to build unique browser fingerprints</h3>
                             <p><i>Pierre Laperdrix, Walter Rudametkin, Benoit Baudry</i></p>
@@ -472,13 +498,16 @@ layout: home
                     <h2 class="heading">Upcoming talks/events</h2>
                     <div class="content">
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-calendar"></i> <a target="_blank" href="http://www.ieee-security.org/TC/EuroSP2017/">EuroS&P 2017</a> (Paris) - Student volunteer</li>
+                            <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://distrinet.cs.kuleuven.be/events/essos/2017/index.html">ESSoS 2017</a> (Bonn) - Presentation of my 3rd publication on FPRandom</li>
+                            <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://www.france-science.org/FADEx-2017-Cybersecurity-EN.html">FADEx 2017</a> (Nancy/Paris/Rennes) - Participation in security-focused workshops and seminars</li>
+                            <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://ressi2017.sciencesconf.org/">RESSI 2017</a> (Grenoble) - Presentation of my 2nd publication on AmIUnique</li>
                         </ul>
                     </div><!--//content-->
                     <br>
                     <h2 class="heading">Past talks/events</h2>
                     <div class="content">
                         <ul class="list-unstyled">
+                        <li><i class="fa fa-calendar"></i> <a target="_blank" href="http://www.ieee-security.org/TC/EuroSP2017/">EuroS&P 2017</a> (Paris) - Student volunteer</li>
                         <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://biblio.insa-rennes.fr/crypto/">Cryptoparty III</a> (Rennes) - Workshop on browser fingerprinting</li>
                         <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://fblondonsecurityfacultysummit.splashthat.com/">Facebook Security Faculty Summit</a> (London) - Participation in a security-focused summit with Facebook employees and faculty members</li>
                         <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://barbierm01.users.greyc.fr/seminaire_crypto/seminaire.html">Security seminar</a> (Caen) - Presentation of current work on browser fingerprinting</li>
