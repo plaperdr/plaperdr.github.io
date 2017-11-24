@@ -6,8 +6,9 @@ layout: home
     <div class="container">
         <div class="profile-content pull-left">
             <h1 class="name">Pierre Laperdrix</h1>
-            <h2 class="desc">3rd year PhD student</h2>
+            <h2 class="desc">PhD in computer security</h2>
             <ul class="social list-inline">
+                <li><a target="_blank" href="https://scholar.google.com/citations?user=hcXaYRAAAAAJ"><i class="fa fa-graduation-cap"></i></a></li>
                 <li><a target="_blank" href="https://github.com/plaperdr"><i class="fa fa-github-alt"></i></a></li>
                 <li class="last-item"><a target="_blank" href="https://bitbucket.org/pierre_laperdrix"><i class="fa fa-bitbucket"></i></a></li>
             </ul>
@@ -24,7 +25,7 @@ layout: home
                 <div class="section-inner">
                     <h2 class="heading">About Me</h2>
                     <div class="content">
-                        <p>I'm a third year PhD student who works on browser fingerprinting in the DiverSE team at INRIA Rennes.</p>
+                        <p>I just obtained my PhD working on browser fingerprinting in the DiverSE team at INRIA Rennes.</p>
                         <p>My main domains of interests are computer security and privacy with a touch of software engineering. Outside of computer science,
                             I love to live thousands of adventures through video games, movies or comics.</p>
                     </div><!--//content-->
@@ -35,105 +36,107 @@ layout: home
                 <div class="section-inner">
                     <h2 class="heading">Scientific publications</h2>
                     <div class="content">
-                        <div class="item">
-                            <h3 class="title">FPRandom: Randomizing core browser objects to break advanced device fingerprinting techniques</h3>
-                            <p><i>Pierre Laperdrix, Benoit Baudry, Vikas Mishra</i></p>
-                            <p>Proceedings of the 9th International Symposium on Engineering Secure Software and Systems (ESSoS 2017)</p>
-                            <p> <i class="fa fa-trophy" aria-hidden="true"></i> - Distinguished Artifact Award</p>
-                            <a class="btn btn-primary" id="abstract3" data-toggle="collapse" data-target="#collapseAbs3" aria-expanded="false" aria-controls="collapseAbs3">
-                                <i id="abstractIcon3" class="fa fa-plus-square"></i>Abstract
-                            </a>
-                            <a class="btn btn-primary" href="https://hal.inria.fr/hal-01527580/document" target="_blank"><i class="fa fa-external-link"></i>PDF</a>
-                            <a class="btn btn-primary" href="assets/documents/essos_fprandom_slides.pdf" target="_blank"><i class="fa fa-external-link"></i>Slides</a>
-                            <a class="btn btn-primary" href="https://github.com/plaperdr/fprandom" target="_blank"><i class="fa fa-external-link"></i>Artifact</a>
-                            <div class="collapse" id="collapseAbs3">
-                                <div class="well">
-                                    <p align="justify">
-                                        The rich programming interfaces (APIs) provided by web browsers can be diverted to collect a browser fingerprint.
-                                        A small number of queries on these interfaces are sufficient to build a fingerprint that is statistically unique and very stable over time.
-                                        Consequently, the fingerprint can be used to track users.
-                                        Our work aims at mitigating the risk of browser fingerprinting for users privacy by 'breaking' the stability of a fingerprint over time.
-                                        We add randomness in the computation of selected browser functions, in order to have them deliver slightly different answers for each browsing session.
-                                        Randomization is possible thanks to the following properties of browsers implementations: (i) some functions have a nondeterministic specification, but a deterministic implementation; (ii) multimedia functions can be slightly altered without deteriorating user's perception.
-                                        We present FPRandom, a modified version of Firefox that adds randomness to mitigate the most recent fingerprinting algorithms, namely canvas fingerprinting, AudioContext fingerprinting and the unmasking of browsers through the order of JavaScript properties.
-                                        We evaluate the effectiveness of FPRandom by testing it against known fingerprinting tests.
-                                        We also conduct a user study and evaluate the performance overhead of randomization to determine the impact on the user experience.
-                                    </p>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-book"></i>
+                                <h4 class="title">FPRandom: Randomizing core browser objects to break advanced device fingerprinting techniques</h4>
+                                <span><i><span class="me">Pierre Laperdrix</span>, Benoit Baudry, Vikas Mishra</i></span><br>
+                                <span>Proceedings of the 9th International Symposium on Engineering Secure Software and Systems (ESSoS 2017)</span><br>
+                                <span><i class="fa fa-trophy" aria-hidden="true"></i> - Distinguished Artifact Award</span><br>
+                                <a class="btn btn-secondary btn-xs" id="abstract3" data-toggle="collapse" data-target="#collapseAbs3" aria-expanded="false" aria-controls="collapseAbs3">
+                                    <i id="abstractIcon3" class="fa fa-plus-square"></i>Abstract
+                                </a>
+                                <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-01527580/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                                <a class="btn btn-secondary btn-xs" href="assets/documents/essos_fprandom_slides.pdf" target="_blank"><i class="fa fa-tv"></i>Slides</a>
+                                <a class="btn btn-secondary btn-xs" href="https://github.com/plaperdr/fprandom" target="_blank"><i class="fa fa-code-fork"></i>Artifact</a>
+                                <div class="collapse" id="collapseAbs3">
+                                    <div class="well">
+                                        <p align="justify">
+                                            The rich programming interfaces (APIs) provided by web browsers can be diverted to collect a browser fingerprint.
+                                            A small number of queries on these interfaces are sufficient to build a fingerprint that is statistically unique and very stable over time.
+                                            Consequently, the fingerprint can be used to track users.
+                                            Our work aims at mitigating the risk of browser fingerprinting for users privacy by 'breaking' the stability of a fingerprint over time.
+                                            We add randomness in the computation of selected browser functions, in order to have them deliver slightly different answers for each browsing session.
+                                            Randomization is possible thanks to the following properties of browsers implementations: (i) some functions have a nondeterministic specification, but a deterministic implementation; (ii) multimedia functions can be slightly altered without deteriorating user's perception.
+                                            We present FPRandom, a modified version of Firefox that adds randomness to mitigate the most recent fingerprinting algorithms, namely canvas fingerprinting, AudioContext fingerprinting and the unmasking of browsers through the order of JavaScript properties.
+                                            We evaluate the effectiveness of FPRandom by testing it against known fingerprinting tests.
+                                            We also conduct a user study and evaluate the performance overhead of randomization to determine the impact on the user experience.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <p></p>
-                        </div><!--//item-->
-						<div class="item">
-                            <h3 class="title">Beauty and the Beast: Diverting modern web browsers to build unique browser fingerprints</h3>
-                            <p><i>Pierre Laperdrix, Walter Rudametkin, Benoit Baudry</i></p>
-                            <p>Proceedings of the 37th IEEE Symposium on Security and Privacy (S&P 2016)</p>
-                            <a class="btn btn-primary" id="abstract2" data-toggle="collapse" data-target="#collapseAbs2" aria-expanded="false" aria-controls="collapseAbs2">
-                                <i id="abstractIcon2" class="fa fa-plus-square"></i>Abstract
-                            </a>
-                            <a class="btn btn-primary" href="https://hal.inria.fr/hal-01285470/document" target="_blank"><i class="fa fa-external-link"></i>PDF</a>
-                            <a class="btn btn-primary" href="assets/documents/sp_amiunique_slides.pdf" target="_blank"><i class="fa fa-external-link"></i>Slides</a>
-                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=p0doExrQwY0" target="_blank"><i class="fa fa-film"></i>Video</a>
+                            </li><!--//li-->
+                            <br>
+						    <li><i class="fa-li fa fa-book"></i>
+                                <h4 class="title">Beauty and the Beast: Diverting modern web browsers to build unique browser fingerprints</h4>
+                                <span><i><span class="me">Pierre Laperdrix</span>, Walter Rudametkin, Benoit Baudry</i></span><br>
+                                <span>Proceedings of the 37th IEEE Symposium on Security and Privacy (S&P 2016)</span><br>
+                                <a class="btn btn-secondary btn-xs" id="abstract2" data-toggle="collapse" data-target="#collapseAbs2" aria-expanded="false" aria-controls="collapseAbs2">
+                                    <i id="abstractIcon2" class="fa fa-plus-square"></i>Abstract
+                                </a>
+                                <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-01285470/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                                <a class="btn btn-secondary btn-xs" href="assets/documents/sp_amiunique_slides.pdf" target="_blank"><i class="fa fa-tv"></i>Slides</a>
+                                <a class="btn btn-secondary btn-xs" href="https://www.youtube.com/watch?v=p0doExrQwY0" target="_blank"><i class="fa fa-video-camera"></i>Video</a>
 
-                            <div class="collapse" id="collapseAbs2">
-                                <div class="well">
-		                            <p align="justify"> 
-										Worldwide, the number of people and the time spent
-										browsing the web keeps increasing. Accordingly, the technologies
-										to enrich the user experience are evolving at an amazing
-										pace. Many of these evolutions provide for a more interactive
-										web (e.g., boom of JavaScript libraries, weekly innovations
-										in HTML5), a more available web (e.g., explosion of mobile
-										devices), a more secure web (e.g., Flash is disappearing, NPAPI
-										plugins are being deprecated), and a more private web (e.g.,
-										increased legislation against cookies, huge success of extensions
-										such as Ghostery and AdBlock).
-										Nevertheless, modern browser technologies, which provide
-										the beauty and power of the web, also provide a darker side,
-										a rich ecosystem of exploitable data that can be used to build
-										unique browser fingerprints.
-										Our work explores the validity of browser fingerprinting
-										in today’s environment. Over the past year, we have collected
-										118,934 fingerprints composed of 17 attributes gathered thanks
-										to the most recent web technologies. We show that innovations
-										in HTML5 provide access to highly discriminating attributes,
-										notably with the use of the Canvas API which relies on
-										multiple layers of the user’s system. In addition, we show
-										that browser fingerprinting is as effective on mobile devices
-										as it is on desktops and laptops, albeit for radically different
-										reasons due to their more constrained hardware and software
-										environments. We also evaluate how browser fingerprinting
-										could stop being a threat to user privacy if some technological
-										evolutions continue (e.g., disappearance of plugins) or are
-										embraced by browser vendors (e.g., standard HTTP headers).
-									</p>
+                                <div class="collapse" id="collapseAbs2">
+                                    <div class="well">
+                                        <p align="justify">
+                                            Worldwide, the number of people and the time spent
+                                            browsing the web keeps increasing. Accordingly, the technologies
+                                            to enrich the user experience are evolving at an amazing
+                                            pace. Many of these evolutions provide for a more interactive
+                                            web (e.g., boom of JavaScript libraries, weekly innovations
+                                            in HTML5), a more available web (e.g., explosion of mobile
+                                            devices), a more secure web (e.g., Flash is disappearing, NPAPI
+                                            plugins are being deprecated), and a more private web (e.g.,
+                                            increased legislation against cookies, huge success of extensions
+                                            such as Ghostery and AdBlock).
+                                            Nevertheless, modern browser technologies, which provide
+                                            the beauty and power of the web, also provide a darker side,
+                                            a rich ecosystem of exploitable data that can be used to build
+                                            unique browser fingerprints.
+                                            Our work explores the validity of browser fingerprinting
+                                            in today’s environment. Over the past year, we have collected
+                                            118,934 fingerprints composed of 17 attributes gathered thanks
+                                            to the most recent web technologies. We show that innovations
+                                            in HTML5 provide access to highly discriminating attributes,
+                                            notably with the use of the Canvas API which relies on
+                                            multiple layers of the user’s system. In addition, we show
+                                            that browser fingerprinting is as effective on mobile devices
+                                            as it is on desktops and laptops, albeit for radically different
+                                            reasons due to their more constrained hardware and software
+                                            environments. We also evaluate how browser fingerprinting
+                                            could stop being a threat to user privacy if some technological
+                                            evolutions continue (e.g., disappearance of plugins) or are
+                                            embraced by browser vendors (e.g., standard HTTP headers).
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <p></p>
-                        </div><!--//item-->
-                        <div class="item">
-                            <h3 class="title">Mitigating browser fingerprint tracking: multi-level reconfiguration and diversification</h3>
-                            <p><i>Pierre Laperdrix, Walter Rudametkin, Benoit Baudry</i></p>
-                            <p>Proceedings of the 10th International Symposium on Software Engineering for Adaptive and Self-Managing Systems (SEAMS 2015)</p>
-                            <a class="btn btn-primary" id="abstract1" data-toggle="collapse" data-target="#collapseAbs1" aria-expanded="false" aria-controls="collapseAbs1">
-                                <i id="abstractIcon1" class="fa fa-plus-square"></i>Abstract
-                            </a>
-                            <a class="btn btn-primary" href="https://hal.inria.fr/hal-01121108/document" target="_blank"><i class="fa fa-external-link"></i>PDF</a>
-							<a class="btn btn-primary" href="assets/documents/seams_blink_slides.pdf" target="_blank"><i class="fa fa-external-link"></i>Slides</a>
+                            </li><!--//li-->
+                            <br>
+                            <li><i class="fa-li fa fa-book"></i>
+                                <h4 class="title">Mitigating browser fingerprint tracking: multi-level reconfiguration and diversification</h4>
+                                <span><i><span class="me">Pierre Laperdrix</span>, Walter Rudametkin, Benoit Baudry</i></span><br>
+                                <span>Proceedings of the 10th International Symposium on Software Engineering for Adaptive and Self-Managing Systems (SEAMS 2015)</span><br>
+                                <a class="btn btn-secondary btn-xs" id="abstract1" data-toggle="collapse" data-target="#collapseAbs1" aria-expanded="false" aria-controls="collapseAbs1">
+                                    <i id="abstractIcon1" class="fa fa-plus-square"></i>Abstract
+                                </a>
+                                <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-01121108/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                                <a class="btn btn-secondary btn-xs" href="assets/documents/seams_blink_slides.pdf" target="_blank"><i class="fa fa-tv"></i>Slides</a>
 
-                            <div class="collapse" id="collapseAbs1">
-                                <div class="well">
-                                <p align="justify"> The diversity of software components (e.g., browsers, plugins, fonts) is a wonderful opportunity for users to customize their platforms. Yet, massive customization creates a privacy issue: browsers are
-                                    slightly different from one another, allowing third parties to collect unique and stable fingerprints to track users. Although software diversity appears to be the source of this privacy issue, we claim
-                                    that this same diversity, combined with automatic reconfiguration, provides the essential ingredients to constantly change browsing platforms. Constant change acts as a moving target defense strategy against
-                                    fingerprint tracking by breaking one essential property: stability over time. We leverage virtualization and modular architectures to automatically assemble and reconfigure software components at multiple
-                                    levels. We operate on operating systems, browsers, fonts and plugins. This work is the first application of software reconfiguration to build a moving target defense against browser fingerprint tracking.
-                                    The main objective is to automatically modify the fingerprint a platform exhibits. We have developed a prototype called Blink to experiment the effectiveness of our approach at randomizing fingerprints.
-                                    We have assembled and reconfigured thousands of platforms, and we observe that all of them exhibit different fingerprints, and that commercial fingerprinting solutions are not able to detect that
-                                    the different platforms actually correspond to a single user.</p>
+                                <div class="collapse" id="collapseAbs1">
+                                    <div class="well">
+                                    <p align="justify"> The diversity of software components (e.g., browsers, plugins, fonts) is a wonderful opportunity for users to customize their platforms. Yet, massive customization creates a privacy issue: browsers are
+                                        slightly different from one another, allowing third parties to collect unique and stable fingerprints to track users. Although software diversity appears to be the source of this privacy issue, we claim
+                                        that this same diversity, combined with automatic reconfiguration, provides the essential ingredients to constantly change browsing platforms. Constant change acts as a moving target defense strategy against
+                                        fingerprint tracking by breaking one essential property: stability over time. We leverage virtualization and modular architectures to automatically assemble and reconfigure software components at multiple
+                                        levels. We operate on operating systems, browsers, fonts and plugins. This work is the first application of software reconfiguration to build a moving target defense against browser fingerprint tracking.
+                                        The main objective is to automatically modify the fingerprint a platform exhibits. We have developed a prototype called Blink to experiment the effectiveness of our approach at randomizing fingerprints.
+                                        We have assembled and reconfigured thousands of platforms, and we observe that all of them exhibit different fingerprints, and that commercial fingerprinting solutions are not able to detect that
+                                        the different platforms actually correspond to a single user.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <p></p>
-                        </div><!--//item-->
+                                <p></p>
+                            </li><!--//li-->
+                        </ul><!--//ul-->
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </section><!--//section-->
@@ -142,28 +145,30 @@ layout: home
                 <div class="section-inner">
                     <h2 class="heading">Magazine publication</h2>
                     <div class="content">
-                        <div class="item">
-                            <h3 class="title">Le fingerprinting : une nouvelle technique de traçage </h3>
-                            <p><i>Pierre Laperdrix, Benoit Baudry</i></p>
-                            <p>MISC n°81, french security-focused magazine. September/October 2015, pp.52-57</p>
-                            <a class="btn btn-primary" id="abstractMisc" data-toggle="collapse" data-target="#collapseAbsMisc" aria-expanded="false" aria-controls="collapseAbsMisc">
-                                <i id="abstractIconMisc" class="fa fa-plus-square"></i>Abstract
-                            </a>
-                            <a class="btn btn-primary" href="http://connect.ed-diamond.com/MISC/MISC-081/Le-fingerprinting-une-nouvelle-technique-de-tracage" target="_blank"><i class="fa fa-external-link"></i>Full article (in French)</a>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-book"></i>
+                                <h4 class="title">Le fingerprinting : une nouvelle technique de traçage </h4>
+                                <span><i><span class="me">Pierre Laperdrix</span>, Benoit Baudry</i></span><br>
+                                <span>MISC n°81, french security-focused magazine. September/October 2015, pp.52-57</span><br>
+                                <a class="btn btn-secondary btn-xs" id="abstractMisc" data-toggle="collapse" data-target="#collapseAbsMisc" aria-expanded="false" aria-controls="collapseAbsMisc">
+                                    <i id="abstractIconMisc" class="fa fa-plus-square"></i>Abstract
+                                </a>
+                                <a class="btn btn-secondary btn-xs" href="http://connect.ed-diamond.com/MISC/MISC-081/Le-fingerprinting-une-nouvelle-technique-de-tracage" target="_blank"><i class="fa fa-external-link"></i>Full article (in French)</a>
 
-                            <div class="collapse" id="collapseAbsMisc">
-                                <div class="well">
-                                <p align="justify">Le « browser fingerprinting » désigne l’activité de collecte par un navigateur
-								d’un certain nombre d’informations sur l’appareil d’un internaute pour
-								bâtir une empreinte (fingerprint). De nombreuses études ont montré que
-								cette empreinte est unique dans la très grande majorité des cas et évolue très
-								lentement. Il est ainsi possible de l’utiliser pour tracer les internautes, sans laisser
-								aucune trace sur l’appareil.
-								</p>
+                                <div class="collapse" id="collapseAbsMisc">
+                                    <div class="well">
+                                    <p align="justify">Le « browser fingerprinting » désigne l’activité de collecte par un navigateur
+                                    d’un certain nombre d’informations sur l’appareil d’un internaute pour
+                                    bâtir une empreinte (fingerprint). De nombreuses études ont montré que
+                                    cette empreinte est unique dans la très grande majorité des cas et évolue très
+                                    lentement. Il est ainsi possible de l’utiliser pour tracer les internautes, sans laisser
+                                    aucune trace sur l’appareil.
+                                    </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <p></p>
-                        </div><!--//item-->
+                                <p></p>
+                            </li><!--//li-->
+                        </ul><!--//ul-->
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </section><!--//section-->
@@ -495,19 +500,31 @@ layout: home
                 </div><!--//section-inner-->
             </aside><!--//section-->
 
+            <aside class="blog aside section">
+                <div class="section-inner">
+                    <h2 class="heading">Services</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-pencil"></i> Reviewer for Wiley Security and Privacy</li>
+                            <li><i class="fa fa-pencil"></i> External reviewer for WWW 2018, ESORICS 2017</li>
+                        </ul>
+                    </div><!--//content-->
+                </div><!--//section-inner-->
+            </aside><!--//section-->
+
             <aside class="list conferences aside section">
                 <div class="section-inner">
                     <h2 class="heading">Upcoming talks/events</h2>
                     <div class="content">
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://guidebook.com/guide/114124/event/16895710/">MozFest 2017</a> (London, UK) - Workshop on third-party tracking and browser fingerprinting</li>
-
+                            <li><i class="fa fa-calendar"></i>Meeting with a researcher (Rennes, FR) - Introduction on browser fingerprinting with a discussion about life as a researcher</li>
                         </ul>
                     </div><!--//content-->
                     <br>
                     <h2 class="heading">Past talks/events</h2>
                     <div class="content">
                         <ul class="list-unstyled">
+                            <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://guidebook.com/guide/114124/event/16895710/">MozFest 2017</a> (London, UK) - Workshop on third-party tracking and browser fingerprinting</li>
                             <li><i class="fa fa-calendar"></i> PhD defense (Rennes, FR)</li>
                             <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://www.uni-potsdam.de/en/cs-se/staff.html">Security seminar</a> (Potsdam, DE) - Invited talk on browser fingerprinting</li>
                             <li><i class="fa fa-calendar"></i> <a target="_blank" href="https://distrinet.cs.kuleuven.be/events/essos/2017/index.html">ESSoS 2017</a> (Bonn, DE) - Presentation of my 3rd publication on FPRandom</li>
