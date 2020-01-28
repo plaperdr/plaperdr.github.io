@@ -43,6 +43,28 @@ layout: home
                     <h2 class="heading">Scientific publications</h2>
                     <div class="content">
                         <ul class="fa-ul">
+                            <li style="text-align:right"><b>2020</b></li>
+                            <br>
+                            <li><i class="fa-li fa fa-book"></i>
+                                <h4 class="title">Don’t count me out: On the relevance of IP addresses in the tracking ecosystem</h4>
+                                <span><i>Vikas Mishra, <span class="me">Pierre Laperdrix</span>, Antoine Vastel, Walter Rudametkin, Romain Rouvoy and Martin Lopatka</i></span><br>
+                                <span>Proceedings of the 2020 edition of The Web Conference
+                                    (<b><a href="https://www2020.thewebconf.org/" target="_blank">WWW 2020</a></b>)
+                                    <br>Taipei, Taïwan (acceptance rate: 19%)
+                                </span><br>
+                                <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-02435622/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                            </li><!--//li-->
+                            <br>
+                            <li><i class="fa-li fa fa-book"></i>
+                                <h4 class="title">Browser fingerprinting: A survey</h4>
+                                <span><i><span class="me">Pierre Laperdrix</span>, Nataliia Bielova, Benoit Baudry and Gildas Avoine</i></span><br>
+                                <span> Journal ACM Transactions on the Web (<b><a href="https://dl.acm.org/journal/tweb" target="_blank">TWEB</a></b>)
+                                </span><br>
+                                <a class="btn btn-secondary btn-xs" href="https://arxiv.org/pdf/1905.01051" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                            </li><!--//li-->
+                            <br>
+                            <li style="text-align:right"><b>2019</b></li>
+                            <br>
                             <li><i class="fa-li fa fa-book"></i>
                                 <h4 class="title">Less is More: Quantifying the Security Benefits of Debloating Web Applications</h4>
                                 <span><i>Babak Amin Azad, <span class="me">Pierre Laperdrix</span> and Nick Nikiforakis</i></span><br>
@@ -50,39 +72,8 @@ layout: home
                                     (<b><a href="https://www.usenix.org/conference/usenixsecurity19" target="_blank">USENIX Sec. 2019</a></b>)
                                     <br>Santa Clara, CA, USA (acceptance rate: 16%)
                                 </span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract10" data-toggle="collapse" data-target="#collapseAbs10" aria-expanded="false" aria-controls="collapseAbs10">
-                                    <i id="abstractIcon10" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="https://securitee.org/files/debloating_usec2019.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
                                 <a class="btn btn-secondary btn-xs" href="https://debloating.com/" target="_blank"><i class="fa fa-code-fork"></i>Artifact</a>
-                                <div class="collapse" id="collapseAbs10">
-                                    <div class="well">
-                                        <p align="justify">
-                                            As software becomes increasingly complex, its attack surface expands enabling
-                                            the exploitation of a wide range of vulnerabilities. Web applications are no
-                                            exception since modern HTML5 standards and the ever-increasing capabilities
-                                            of JavaScript are utilized to build rich web applications, often subsuming
-                                            the need for traditional desktop applications. One possible way of handling
-                                            this increased complexity is through the process of software debloating, i.e.,
-                                            the removal not only of dead code but also of code corresponding to features
-                                            that a specific set of users do not require. Even though debloating has been
-                                            successfully applied on operating systems, libraries, and compiled programs,
-                                            its applicability on web applications has not yet been investigated.
-                                            <br><br>
-                                            In this paper, we present the first analysis of the security benefits of
-                                            debloating web applications. We focus on four popular PHP applications and
-                                            we dynamically exercise them to obtain information about the server-side code
-                                            that executes as a result of client-side requests. We evaluate two different
-                                            debloating strategies (file-level debloating and function-level debloating)
-                                            and we show that we can produce functional web applications that are 46%
-                                            smaller than their original versions and exhibit half their original cyclomatic
-                                            complexity. Moreover, our results show that the process of debloating removes
-                                            code associated with tens of historical vulnerabilities and further shrinks
-                                            a web application's attack surface by removing unnecessary external packages
-                                            and abusable PHP gadgets.
-                                        </p>
-                                    </div>
-                                </div>
                             </li><!--//li-->
                             <br>
                             <li><i class="fa-li fa fa-book"></i>
@@ -92,25 +83,9 @@ layout: home
                                     (<b><a href="https://www.dimva2019.org/" target="_blank">DIMVA 2019</a></b>)
                                     <br>Gothenburg, Sweden (acceptance rate: 29%)
                                 </span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract9" data-toggle="collapse" data-target="#collapseAbs9" aria-expanded="false" aria-controls="collapseAbs9">
-                                    <i id="abstractIcon9" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="assets/documents/canvasauthentication_dimva2019.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
                                 <a class="btn btn-secondary btn-xs" href="https://github.com/plaperdr/morellian-canvas" target="_blank"><i class="fa fa-code-fork"></i>Artifact</a>
                                 <a class="btn btn-secondary btn-xs" href="https://plaperdr.github.io/morellian-canvas/Prototype/webpage/picassauth.html" target="_blank"><i class="fa fa-file-o"></i>Demo</a>
-                                <div class="collapse" id="collapseAbs9">
-                                    <div class="well">
-                                        <p align="justify">
-                                            In this paper, we present the first fingerprinting-based authentication scheme that is not vulnerable to trivial replay attacks. Our proposed canvas-based
-                                            fingerprinting technique utilizes one key characteristic: it is parameterized by a challenge, generated on the server side. We perform an in-depth analysis of
-                                            all parameters that can be used to generate canvas challenges, and we show that it is possible to generate unique, unpredictable, and highly diverse
-                                            canvas-generated images each time a user logs onto a service.
-                                            <br><br>
-                                            With the analysis of images collected from more than 1.1 million devices in a real-world large-scale experiment, we evaluate our proposed scheme against a
-                                            large set of attack scenarios and conclude that canvas fingerprinting is a suitable mechanism for stronger authentication on the web.
-                                        </p>
-                                    </div>
-                                </div>
                             </li><!--//li-->
                             <br>
                             <li><i class="fa-li fa fa-book"></i>
@@ -120,23 +95,8 @@ layout: home
                                     (<b><a href="https://www2019.thewebconf.org/" target="_blank">WWW 2019</a></b>)
                                     <br>San Fransisco, CA, USA (acceptance rate: 20%)
                                 </span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract8" data-toggle="collapse" data-target="#collapseAbs8" aria-expanded="false" aria-controls="collapseAbs8">
-                                    <i id="abstractIcon8" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="https://www.securitee.org/files/extensionbloat_www2019.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
                                 <a class="btn btn-secondary btn-xs" href="https://github.com/plaperdr/extension-access-control" target="_blank"><i class="fa fa-code-fork"></i>Artifact</a>
-                                <div class="collapse" id="collapseAbs8">
-                                    <div class="well">
-                                        <p align="justify">
-                                            In this paper, we investigate to what extent the page modifications that make browser extensions fingerprintable are necessary for their operation.
-                                            We characterize page modifications that are completely unnecessary for the extension's functionality as extension bloat.
-                                            By analyzing 58,034 extensions from the Google Chrome store, we discovered that 5.7% of them were unnecessarily identifiable because of extension bloat.
-                                            To protect users against unnecessary extension fingerprinting due to bloat, we describe the design and implementation of an in-browser mechanism that
-                                            provides coarse-grained access control for extensions on all websites. The proposed mechanism and its built-in policies, does not only protect users from
-                                            fingerprinting, but also offers additional protection against malicious extensions exfiltrating user data from sensitive websites.
-                                        </p>
-                                    </div>
-                                </div>
                             </li><!--//li-->
                             <br>
                             <li><i class="fa-li fa fa-book"></i>
@@ -146,34 +106,10 @@ layout: home
                                     (<b><a href="https://www.ndss-symposium.org/ndss2019/" target="_blank">NDSS 2019</a></b>)
                                     <br>San Diego, CA, USA (acceptance rate: 17%)
                                 </span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract7" data-toggle="collapse" data-target="#collapseAbs7" aria-expanded="false" aria-controls="collapseAbs7">
-                                    <i id="abstractIcon7" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="https://www.securitee.org/files/mobilebrowsers_ndss2019.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
-                                <div class="collapse" id="collapseAbs7">
-                                    <div class="well">
-                                        <p align="justify">
-                                            Recent market share statistics show that mobile device traffic has overtaken that of traditional desktop computers. Users spend
-                                            an increasing amount of time on their smartphones and tablets, while the web continues to be the platform of choice for delivering
-                                            new applications to users. In this environment, it is necessary for web applications to utilize all the tools at their disposal
-                                            to protect mobile users against popular web application attacks.
-
-                                            In this paper, we perform the first study of the support of popular web-application security mechanisms (such as the Content-Security
-                                            Policy, HTTP Strict Transport Security, and Referrer Policy) across mobile browsers. We design 395 individual tests covering 8 different
-                                            security mechanisms, and utilize them to evaluate the security-mechanism support in the 20 most popular browser families on Android.
-                                            Moreover, by collecting and testing browser versions from the last seven years, we evaluate a total of 351 unique browser versions
-                                            against the aforementioned tests, collecting more than 138K test results.
-
-                                            By analyzing these results, we find that, although mobile browsers generally support more security mechanisms over time, not all
-                                            browsers evolve in the same way. We discover popular browsers, with millions of downloads, which do not support the majority of the
-                                            tested mechanisms, and identify design choices, followed by the majority of browsers, which leave hundreds of popular websites open
-                                            to clickjacking attacks. Moreover, we discover the presence of multi-year vulnerability windows between the time when popular websites
-                                            start utilizing a security mechanism and when mobile browsers enforce it. Our findings highlight the need for continuous security testing
-                                            of mobile web browsers, as well as server-side frameworks which can adapt to the level of security that each browser can guarantee.
-                                        </p>
-                                    </div>
-                                </div>
                             </li><!--//li-->
+                            <br>
+                            <li style="text-align:right"><b>2018</b></li>
                             <br>
                             <li><i class="fa-li fa fa-book"></i>
                                 <h4 class="title">FP-Scanner: The Privacy Implications of Browser Fingerprint Inconsistencies</h4>
@@ -182,25 +118,7 @@ layout: home
                                     (<b><a href="https://www.usenix.org/conference/usenixsecurity18" target="_blank">USENIX Sec. 2018</a></b>)
                                     <br>Baltimore, MD, USA (acceptance rate: 19%)
                                 </span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract6" data-toggle="collapse" data-target="#collapseAbs6" aria-expanded="false" aria-controls="collapseAbs6">
-                                    <i id="abstractIcon6" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-01820197/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
-                                <div class="collapse" id="collapseAbs6">
-                                    <div class="well">
-                                        <p align="justify">
-                                            By exploiting the diversity of device and browser configurations, browser fingerprinting established itself as a viable technique to enable
-                                            stateless user tracking in production. Companies and academic communities have responded with a wide range of countermeasures. However ,
-                                            the way these countermeasures are evaluated does not properly assess their impact on user privacy, in particular regarding the quantity of
-                                            information they may indirectly leak by revealing their presence. In this paper, we investigate the current state of the art of browser
-                                            fingerprinting countermeasures to study the inconsistencies they may introduce in altered fingerprints , and how this may impact user privacy.
-                                            To do so, we introduce FP-SCANNER as a new test suite that explores browser fingerprint inconsistencies to detect potential alterations, and
-                                            we show that we are capable of detecting countermeasures from the inconsistencies they introduce. Beyond spotting altered browser fingerprints,
-                                            we demonstrate that FP-SCANNER can also reveal the original value of altered fingerprint attributes, such as the browser or the operating
-                                            system. We believe that this result can be exploited by fingerprinters to more accurately target browsers with countermeasures.
-                                        </p>
-                                    </div>
-                                </div>
                             </li><!--//li-->
                             <br>
                             <li><i class="fa-li fa fa-book"></i>
@@ -210,26 +128,7 @@ layout: home
                                     (<b><a href="https://www.ieee-security.org/TC/SP2018/" target="_blank">S&P 2018</a></b>)
                                     <br>San Francisco, CA, USA (acceptance rate: 11%)
                                 </span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract5" data-toggle="collapse" data-target="#collapseAbs5" aria-expanded="false" aria-controls="collapseAbs5">
-                                    <i id="abstractIcon5" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-01652021/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
-                                <div class="collapse" id="collapseAbs5">
-                                    <div class="well">
-                                        <p align="justify">
-                                            Browser fingerprinting has emerged as a technique to track users without their consent. Unlike cookies, fingerprinting is a stateless
-                                            technique that does not store any information on devices, but instead exploits unique combinations of attributes handed over freely by browsers.
-                                            The uniqueness of fingerprints allows them to be used for identification. However, browser fingerprints change over time and the effectiveness
-                                            of tracking users over longer durations has not been properly addressed. In this paper, we show that browser fingerprints tend to change
-                                            frequently—from every few hours to days—due to, for example, software updates or configuration changes. Yet, despite these frequent changes,
-                                            we show that browser fingerprints can still be linked, thus enabling long-term tracking. FP-STALKER is an approach to link browser fingerprint
-                                            evolutions. It compares fingerprints to determine if they originate from the same browser. We created two variants of FP-STALKER, a rule-based
-                                            variant that is faster, and a hybrid variant that exploits machine learning to boost accuracy. To evaluate FP-STALKER, we conduct an empirical
-                                            study using 98,598 fingerprints we collected from 1,905 distinct browser instances. We compare our algorithm with the state of the art and show
-                                            that, on average, we can track browsers for 54.48 days, and 26 % of browsers can be tracked for more than 100 days.
-                                        </p>
-                                    </div>
-                                </div>
                             </li><!--//li-->
                             <br>
                             <li><i class="fa-li fa fa-book"></i>
@@ -239,26 +138,10 @@ layout: home
                                     (<b><a href="https://www2018.thewebconf.org/" target="_blank">WWW 2018</a></b>)
                                     <br>Lyon, France (acceptance rate: 15%)
                                 </span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract4" data-toggle="collapse" data-target="#collapseAbs4" aria-expanded="false" aria-controls="collapseAbs4">
-                                    <i id="abstractIcon4" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-01718234/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
-                                <div class="collapse" id="collapseAbs4">
-                                    <div class="well">
-                                        <p align="justify">
-                                            Browser fingerprinting is a stateless technique, which consists in collecting a wide range of data about a device through browser APIs. Past studies
-                                            have demonstrated that modern devices present so much diversity that fingerprints can be exploited to identify and track users online. With this work,
-                                            we want to evaluate if browser fingerprinting is still effective at uniquely identifying a large group of users when analyzing millions of fingerprints
-                                            over a few months. We collected 2,067,942 browser fingerprints from one of the top 15 French websites. The analysis of this novel dataset sheds a new
-                                            light on the ever-growing browser fingerprinting domain. The key insight is that the percentage of unique fingerprints in our dataset is much lower
-                                            than what was reported in the past: only 33.6% of fingerprints are unique by opposition to over 80% in previous studies. We show that non-unique
-                                            fingerprints tend to be fragile. If some features of the fingerprint change, it is very probable that the fingerprint will become unique. We also
-                                            confirm that the current evolution of web technologies is benefiting users' privacy significantly as the removal of plugins brings down
-                                            substantively the rate of unique desktop machines.
-                                        </p>
-                                    </div>
-                                </div>
                             </li><!--//li-->
+                            <br>
+                            <li style="text-align:right"><b>2017</b></li>
                             <br>
                             <li><i class="fa-li fa fa-book"></i>
                                 <h4 class="title">FPRandom: Randomizing core browser objects to break advanced device fingerprinting techniques</h4>
@@ -268,28 +151,12 @@ layout: home
                                     <br>Bonn, Germany (acceptance rate: 37%)
                                 </span><br>
                                 <span><i class="fa fa-trophy" aria-hidden="true"></i> - Distinguished Artifact Award</span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract3" data-toggle="collapse" data-target="#collapseAbs3" aria-expanded="false" aria-controls="collapseAbs3">
-                                    <i id="abstractIcon3" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-01527580/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
                                 <a class="btn btn-secondary btn-xs" href="assets/documents/essos_fprandom_slides.pdf" target="_blank"><i class="fa fa-tv"></i>Slides</a>
                                 <a class="btn btn-secondary btn-xs" href="https://github.com/plaperdr/fprandom" target="_blank"><i class="fa fa-code-fork"></i>Artifact</a>
-                                <div class="collapse" id="collapseAbs3">
-                                    <div class="well">
-                                        <p align="justify">
-                                            The rich programming interfaces (APIs) provided by web browsers can be diverted to collect a browser fingerprint.
-                                            A small number of queries on these interfaces are sufficient to build a fingerprint that is statistically unique and very stable over time.
-                                            Consequently, the fingerprint can be used to track users.
-                                            Our work aims at mitigating the risk of browser fingerprinting for users privacy by 'breaking' the stability of a fingerprint over time.
-                                            We add randomness in the computation of selected browser functions, in order to have them deliver slightly different answers for each browsing session.
-                                            Randomization is possible thanks to the following properties of browsers implementations: (i) some functions have a nondeterministic specification, but a deterministic implementation; (ii) multimedia functions can be slightly altered without deteriorating user's perception.
-                                            We present FPRandom, a modified version of Firefox that adds randomness to mitigate the most recent fingerprinting algorithms, namely canvas fingerprinting, AudioContext fingerprinting and the unmasking of browsers through the order of JavaScript properties.
-                                            We evaluate the effectiveness of FPRandom by testing it against known fingerprinting tests.
-                                            We also conduct a user study and evaluate the performance overhead of randomization to determine the impact on the user experience.
-                                        </p>
-                                    </div>
-                                </div>
                             </li><!--//li-->
+                            <br>
+                            <li style="text-align:right"><b>2016</b></li>
                             <br>
 						    <li><i class="fa-li fa fa-book"></i>
                                 <h4 class="title">Beauty and the Beast: Diverting modern web browsers to build unique browser fingerprints</h4>
@@ -299,48 +166,12 @@ layout: home
                                     <br>San Jose, CA, USA (acceptance rate: 13%)
                                 </span><br>
                                 <span><i class="fa fa-trophy" aria-hidden="true"></i> - 2018 CNIL-Inria European Privacy Protection Award</span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract2" data-toggle="collapse" data-target="#collapseAbs2" aria-expanded="false" aria-controls="collapseAbs2">
-                                    <i id="abstractIcon2" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-01285470/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
                                 <a class="btn btn-secondary btn-xs" href="assets/documents/sp_amiunique_slides.pdf" target="_blank"><i class="fa fa-tv"></i>Slides</a>
                                 <a class="btn btn-secondary btn-xs" href="https://www.youtube.com/watch?v=p0doExrQwY0" target="_blank"><i class="fa fa-video-camera"></i>Video</a>
-
-                                <div class="collapse" id="collapseAbs2">
-                                    <div class="well">
-                                        <p align="justify">
-                                            Worldwide, the number of people and the time spent
-                                            browsing the web keeps increasing. Accordingly, the technologies
-                                            to enrich the user experience are evolving at an amazing
-                                            pace. Many of these evolutions provide for a more interactive
-                                            web (e.g., boom of JavaScript libraries, weekly innovations
-                                            in HTML5), a more available web (e.g., explosion of mobile
-                                            devices), a more secure web (e.g., Flash is disappearing, NPAPI
-                                            plugins are being deprecated), and a more private web (e.g.,
-                                            increased legislation against cookies, huge success of extensions
-                                            such as Ghostery and AdBlock).
-                                            Nevertheless, modern browser technologies, which provide
-                                            the beauty and power of the web, also provide a darker side,
-                                            a rich ecosystem of exploitable data that can be used to build
-                                            unique browser fingerprints.
-                                            Our work explores the validity of browser fingerprinting
-                                            in today’s environment. Over the past year, we have collected
-                                            118,934 fingerprints composed of 17 attributes gathered thanks
-                                            to the most recent web technologies. We show that innovations
-                                            in HTML5 provide access to highly discriminating attributes,
-                                            notably with the use of the Canvas API which relies on
-                                            multiple layers of the user’s system. In addition, we show
-                                            that browser fingerprinting is as effective on mobile devices
-                                            as it is on desktops and laptops, albeit for radically different
-                                            reasons due to their more constrained hardware and software
-                                            environments. We also evaluate how browser fingerprinting
-                                            could stop being a threat to user privacy if some technological
-                                            evolutions continue (e.g., disappearance of plugins) or are
-                                            embraced by browser vendors (e.g., standard HTTP headers).
-                                        </p>
-                                    </div>
-                                </div>
                             </li><!--//li-->
+                            <br>
+                            <li style="text-align:right"><b>2015</b></li>
                             <br>
                             <li><i class="fa-li fa fa-book"></i>
                                 <h4 class="title">Mitigating browser fingerprint tracking: multi-level reconfiguration and diversification</h4>
@@ -349,25 +180,10 @@ layout: home
                                     (<b><a href="http://www.disim.univaq.it/seams2015/" target="_blank">SEAMS 2015</a></b>)
                                     <br>Florence, Italy (acceptance rate: 29%)
                                 </span><br>
-                                <a class="btn btn-secondary btn-xs" id="abstract1" data-toggle="collapse" data-target="#collapseAbs1" aria-expanded="false" aria-controls="collapseAbs1">
-                                    <i id="abstractIcon1" class="fa fa-plus-square"></i>Abstract
-                                </a>
                                 <a class="btn btn-secondary btn-xs" href="https://hal.inria.fr/hal-01121108/document" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
                                 <a class="btn btn-secondary btn-xs" href="assets/documents/seams_blink_slides.pdf" target="_blank"><i class="fa fa-tv"></i>Slides</a>
                                 <a class="btn btn-secondary btn-xs" href="https://github.com/DIVERSIFY-project/blink" target="_blank"><i class="fa fa-code-fork"></i>Artifact (Original)</a>
                                 <a class="btn btn-secondary btn-xs" href="https://github.com/plaperdr/blink-docker" target="_blank"><i class="fa fa-code-fork"></i>Artifact (Docker)</a>
-                                <div class="collapse" id="collapseAbs1">
-                                    <div class="well">
-                                    <p align="justify"> The diversity of software components (e.g., browsers, plugins, fonts) is a wonderful opportunity for users to customize their platforms. Yet, massive customization creates a privacy issue: browsers are
-                                        slightly different from one another, allowing third parties to collect unique and stable fingerprints to track users. Although software diversity appears to be the source of this privacy issue, we claim
-                                        that this same diversity, combined with automatic reconfiguration, provides the essential ingredients to constantly change browsing platforms. Constant change acts as a moving target defense strategy against
-                                        fingerprint tracking by breaking one essential property: stability over time. We leverage virtualization and modular architectures to automatically assemble and reconfigure software components at multiple
-                                        levels. We operate on operating systems, browsers, fonts and plugins. This work is the first application of software reconfiguration to build a moving target defense against browser fingerprint tracking.
-                                        The main objective is to automatically modify the fingerprint a platform exhibits. We have developed a prototype called Blink to experiment the effectiveness of our approach at randomizing fingerprints.
-                                        We have assembled and reconfigured thousands of platforms, and we observe that all of them exhibit different fingerprints, and that commercial fingerprinting solutions are not able to detect that
-                                        the different platforms actually correspond to a single user.</p>
-                                    </div>
-                                </div>
                                 <p></p>
                             </li><!--//li-->
                         </ul><!--//ul-->
@@ -761,7 +577,8 @@ layout: home
                     <div class="content">
                         <ul class="list-unstyled">
                             <li><i class="fa fa-pencil"></i> Program Committee member for
-                                DIMVA 2020,
+                                <a href="https://www.usenix.org/conference/woot20/call-for-papers" target="_blank">WOOT 2020</a>,
+                                <a href="https://dimva2020.campus.ciencias.ulisboa.pt/" target="_blank">DIMVA 2020</a>,
                                 <a href="https://www.usenix.org/conference/woot19/call-for-papers" target="_blank">WOOT 2019</a>,
                                 <a href="https://www.antiphishing.org/apwg-events/ecrime2018/cfp" target="_blank">eCrime 2018</a>
                             </li>
