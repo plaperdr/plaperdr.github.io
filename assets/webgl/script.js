@@ -94,7 +94,7 @@ function createVerticesList(numOfVertices)
 function getFingerprint()
 {
   const canvas = document.createElement('canvas');
-  const gl = canvas.getContext("webgl2", {antialias: false});
+  const gl = canvas.getContext("webgl", {antialias: false});
   const startTimestamp = Date.now();
   let NUM_OF_VERTICES = document.getElementById("vertices").value;
   let NUM_OF_SAMPLES_PER_VERTEX = document.getElementById("samples").value;
@@ -178,8 +178,8 @@ function getFingerprint()
     if (cur_iteration === max_iterations) {
       tracesData.push({
         'user-Agent': navigator.userAgent,
-        'webGLVendor': gl.getParameter(gl.getExtension('WEBGL_debug_renderer_info').UNMASKED_VENDOR_WEBGL),
-        'webGLRenderer': gl.getParameter(gl.getExtension('WEBGL_debug_renderer_info').UNMASKED_RENDERER_WEBGL),
+        //'webGLVendor': gl.getParameter(gl.getExtension('WEBGL_debug_renderer_info').UNMASKED_VENDOR_WEBGL),
+        //'webGLRenderer': gl.getParameter(gl.getExtension('WEBGL_debug_renderer_info').UNMASKED_RENDERER_WEBGL),
         'tracesRequest': tracesRequest,
         'tracesPerformanceNow': tracesPerformanceNow,
         'startTimestamp': startTimestamp,
