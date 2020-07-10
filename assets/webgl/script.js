@@ -94,7 +94,7 @@ function createVerticesList(numOfVertices)
 function getFingerprint()
 {
   const canvas = document.createElement('canvas');
-  const gl = canvas.getContext("webgl", {antialias: false});
+  const gl = canvas.getContext("webgl2", {antialias: false});
   const startTimestamp = Date.now();
   let NUM_OF_VERTICES = document.getElementById("vertices").value;
   let NUM_OF_SAMPLES_PER_VERTEX = document.getElementById("samples").value;
