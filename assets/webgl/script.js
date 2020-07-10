@@ -16,7 +16,6 @@ const vertex_code =
     in vec2 coordinates;
     out vec3 colorFrag;
     uniform int cur_stalled_vertex;
-    uniform int amplification;
     
     float stall_function()
     {
@@ -24,9 +23,7 @@ const vertex_code =
     
         for(int i =1; i < 0xfffff; i++)
         {
-          for(int j=0; j < amplification; j++){
             res *= (res * float(i));
-           }
         }
         return res;
     }            
@@ -101,7 +98,7 @@ function getFingerprint()
   const startTimestamp = Date.now();
   let NUM_OF_VERTICES = document.getElementById("vertices").value;
   let NUM_OF_SAMPLES_PER_VERTEX = document.getElementById("samples").value;
-  let NUM_AMPLIFICATION = document.getElementById("amplification").value;
+  //let NUM_AMPLIFICATION = document.getElementById("amplification").value;
 
   var vertices = createVerticesList(NUM_OF_VERTICES);
 
@@ -156,8 +153,6 @@ function getFingerprint()
 
   let cur_stalled_vertex = gl.getUniformLocation(shaderProgram, "cur_stalled_vertex");
   gl.uniform1i(cur_stalled_vertex, 0);
-  let amplification = gl.getUniformLocation(shaderProgram, "amplification");
-  gl.uniform1i(amplification, NUM_AMPLIFICATION);
   
   const tracesRequest = [];
   const tracesPerformanceNow = [];
