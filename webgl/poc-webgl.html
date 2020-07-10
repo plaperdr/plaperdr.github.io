@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebGL Test page</title>
+</head>
+<body>
+<h2>WebGL Test page</h2>
+<label for="vertices">Number of vertices (1-100, default at 20):</label><br>
+<input type="number" id="vertices" name="vertices" min="1" max="100" value="20"><br>
+<label for="samples">Number of samples per vertex (1-10, default at 1):</label><br>
+<input type="number" id="samples" name="samples" min="1" max="10" value="1"><br>
+<label for="amplification">Amplification (1-10, default at 1):</label><br>
+<input type="number" id="amplification" name="amplification" min="1" max="10" value="1"><br>
+<button type="button" onclick="getFingerprint()">Run WebGL Code with requestAnimationFrame</button>
+
+<script src="../assets/webgl/script.js"></script>
+</body>
+</html>
