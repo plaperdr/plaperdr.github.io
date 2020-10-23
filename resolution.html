@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<h2>Test</h2>
+<br>
+<button type="button" onclick="test()">Run</button>
+<br>
+<h3>Results</h3>
+<div id="res"></div>
+<script>
+    function test(){
+      let start = performance.now();
+      let end = performance.now();
+      while(end === start) end=performance.now();
+      document.getElementById("res").innerHTML += (end-start) + "<br>";
+    }
+</script>
+
+
+</body>
+</html>
