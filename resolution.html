@@ -13,8 +13,8 @@
 <div id="res"></div>
 <script>
     function test(){
-      let start = performance.now();
-      let end = performance.now();
+      var start = performance.now();
+      var end = performance.now();
       while(end === start) end=performance.now();
       document.getElementById("res").innerHTML += (end-start) + "<br>";
     }
