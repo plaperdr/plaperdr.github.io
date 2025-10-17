@@ -571,7 +571,7 @@ a.git:focus,
 .buttonHead {
   display: inline-block;
   align-content: center;
-  border-radius: 28px;
+  border-radius: 4px;
   border: 2px solid rgb(73, 81, 90);
   padding: 10px;
   color: rgb(73, 81, 90);
