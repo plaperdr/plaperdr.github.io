@@ -563,3 +563,21 @@ a.git:focus,
 .latest .item {
   margin-bottom: 0;
 }
+
+.colorTheme {
+  color: rgb(176, 183, 191);
+}
+
+.buttonHead {
+  display: inline-block;
+  align-content: center;
+  border-radius: 28px;
+  border: 2px solid rgb(73, 81, 90);
+  padding: 10px;
+  color: rgb(73, 81, 90);
+  }
+
+.buttonHead:hover{
+  color: rgb(73, 81, 90);
+  text-decoration: none;
+}
